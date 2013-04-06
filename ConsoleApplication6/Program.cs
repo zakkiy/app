@@ -9,6 +9,7 @@ namespace ConsoleApplication6
     {
         static void Main(string[] args)
         {
+            //再帰実行
             exec();
         }
 
@@ -18,12 +19,14 @@ namespace ConsoleApplication6
             var input = Console.ReadLine();
             if (input != null)
             {
+                int test;
                 var n = int.Parse(input);  // ユーザーの入力した整数を読み込む
                 var c = new Calculator();
                 c.calc(n, 0);
                 Console.WriteLine(c.count);
                 exec();
             }
+            Console.ReadLine();
         }
     }
 
