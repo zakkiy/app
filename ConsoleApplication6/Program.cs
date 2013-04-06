@@ -22,9 +22,7 @@ namespace ConsoleApplication6
                 var c = new Calculator();
                 c.calc(n, 0);
                 Console.WriteLine(c.count);
-                //Console.ReadLine();
                 exec();
-                //System.out.println(c.count);
             }
         }
     }
